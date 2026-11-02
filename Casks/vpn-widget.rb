@@ -1,6 +1,6 @@
 cask "vpn-widget" do
-  version "0.1.0"
-  sha256 "959d5ea54e578079c1c2317d0a62b928e01113d25b38343d4a15b73f3d8fbd92"
+  version "0.1.1"
+  sha256 "23fb8bec65ec19073af2ecb369364000ba6b7498aa8750fa163c26a96280f510"
 
   url "https://github.com/ya-makariy/vpn-widget/releases/download/v#{version}/VPN-Widget-#{version}.zip"
   name "VPN Widget"
