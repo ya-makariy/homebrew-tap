@@ -7,6 +7,7 @@ Homebrew tap for my macOS apps.
 | Cask | App | Description |
 |------|-----|-------------|
 | `to-review` | [ToReview](https://github.com/ya-makariy/to-review) | Menu-bar app and widgets for GitHub and GitLab pull requests waiting for your review |
+| `vpn-widget` | [VPN Widget](https://github.com/ya-makariy/vpn-widget) | Menu bar status and control for your work VPNs: FortiClient, AnyConnect, AmneziaWG and WireGuard profiles, plus its own openfortivpn and openconnect tunnels |
 
 ## Install
 
@@ -15,12 +16,13 @@ something from it explicitly:
 
 ```sh
 brew install --cask ya-makariy/tap/to-review
+brew install --cask ya-makariy/tap/vpn-widget
 ```
 
 Upgrades then work as usual:
 
 ```sh
-brew upgrade --cask to-review
+brew upgrade --cask to-review vpn-widget
 ```
 
 ## Unsigned apps
@@ -35,6 +37,7 @@ Or remove the quarantine flag yourself:
 
 ```sh
 xattr -dr com.apple.quarantine /Applications/ToReview.app
+xattr -dr com.apple.quarantine "/Applications/VPN Widget.app"
 ```
 
 Later upgrades carry the approval forward.
@@ -46,7 +49,8 @@ repository. To bump by hand:
 
 ```sh
 curl -fsSL https://github.com/ya-makariy/to-review/releases/download/vX.Y.Z/ToReview-X.Y.Z.zip | shasum -a 256
-# then edit version / sha256 in Casks/to-review.rb
+curl -fsSL https://github.com/ya-makariy/vpn-widget/releases/download/vX.Y.Z/VPN-Widget-X.Y.Z.zip | shasum -a 256
+# then edit version / sha256 in Casks/<cask>.rb
 ```
 
 ## License
