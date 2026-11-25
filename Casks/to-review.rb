@@ -1,6 +1,6 @@
 cask "to-review" do
-  version "0.1.2"
-  sha256 "510f10674bb468f219788e4d67c32d893679fad0399af25b46bd91b775741b80"
+  version "0.1.3"
+  sha256 "14d8be8fe4a6f5c435d5f203ec9fa790819cbc7b009c8ac331adab7a233f0418"
 
   url "https://github.com/ya-makariy/to-review/releases/download/v#{version}/ToReview-#{version}.zip"
   name "ToReview"
